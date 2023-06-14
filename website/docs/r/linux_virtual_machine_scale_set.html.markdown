@@ -112,7 +112,7 @@ resource "azurerm_linux_virtual_machine_scale_set" "example" {
 
 * `additional_capabilities` - (Optional) An `additional_capabilities` block as defined below.
 
-* `admin_password` - (Optional) The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.
+* `admin_password` - (Required) The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.
 
 -> **NOTE:** When an `admin_password` is specified `disable_password_authentication` must be set to `false`.
 
